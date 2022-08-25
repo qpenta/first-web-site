@@ -6,5 +6,5 @@
 
 
 let a90 = class{
-    if 
+    if (a90)
 }
