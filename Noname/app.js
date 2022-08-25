@@ -5,3 +5,6 @@
 // console.log(typeof(word))
 
 
+let a90 = class{
+    if 
+}
