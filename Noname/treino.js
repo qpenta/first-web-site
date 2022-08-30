@@ -76,40 +76,123 @@
 // calculateBalance()
 
 
-//transformDegree ('50F')
+// Transformer fireheints for celsius
 
-function transformDegree(degree) {
-    const celsiusExists = degree.toUpperCase().includes('C')
-    const fahrenheitExists = degree.toUpperCase().includes('F')
+// transformDegree ('50F')
+
+// function transformDegree(degree) {
+//     const celsiusExists = degree.toUpperCase().includes('C')
+//     const fahrenheitExists = degree.toUpperCase().includes('F')
     
-    // fluuxo de erro
-    if(!celsiusExists && !fahrenheitExists) {
-        throw new Error('Grau não indentificado')
+//     // fluuxo de erro
+//     if(!celsiusExists && !fahrenheitExists) {
+//         throw new Error('Grau não indentificado')
          
-    }   
+//     }   
 
-    //fluxo ideal, F -> C
+//     //fluxo ideal, F -> C
 
-    let updatedDegree = Number(degree.toUpperCase().replace("F", ""));  
-    let formula = fahrenheit => (fahrenheit - 32) * 5/9
-    let degreeSing ='C'
+//     let updatedDegree = Number(degree.toUpperCase().replace("F", ""));  
+//     let formula = fahrenheit => (fahrenheit - 32) * 5/9
+//     let degreeSing ='C'
 
-    //fluxo alternativo C->
-    if(celsiusExists) {
-        updatedDegree = Number(degree.toUpperCase().replace("C",""));
-        formula = celsius => celsius * 9/5 + 32
-        degreeSing = 'F'
-    }
+//     //fluxo alternativo C->
+//     if(celsiusExists) {
+//         updatedDegree = Number(degree.toUpperCase().replace("C",""));
+//         formula = celsius => celsius * 9/5 + 32
+//         degreeSing = 'F'
+//     }
 
-    return formula(updatedDegree) + degreeSing
-}
+//     return formula(updatedDegree) + degreeSing
+// }
 
-try {
-    console.log(transformDegree('10C')) 
-    console.log(transformDegree('50F')) 
-    transformDegree('10z') 
+// try {
+//     console.log(transformDegree('10C')) 
+//     console.log(transformDegree('50F')) 
+//     transformDegree('10z') 
     
-} catch (error) {
-    console.log(error.message)
+// } catch (error) {
+//     console.log(error.message)
     
-}
+// }
+
+
+//Biblioteca
+    // const booksByCategory = [
+    //     {
+    //         caretogory: "Riqueza",
+    //         books: [
+    //             {
+    //                 title: "Os segredos  da morte milionária",
+    //                 author: " T. Harv Eker",
+    //             },
+    //             {
+    //                 title: " O homem mais rico da Babilônia",
+    //                 author: "Gerog S. Classon",
+    //             },
+    //             {
+    //                 titlte: "Pai rico, pai pobre",
+    //                 author: "Robert T. Kiyosaki e Sharon L. Lechter",
+    //             },
+    //         ],
+    //     },  
+    //     {
+    //         category : "Inteligência Emonional",
+    //         books: [
+    //             {
+    //                 title: "Você é Insubstituível",
+    //                 author: "Augusto Cury",
+    //             },
+    //             {
+    //                 title: "Ansiedade - Como enfrentar o mal do século",
+    //                 author: "Augusto Cury",
+    //             },
+    //             {
+    //                 title:"Os 7 hábitos das pessoas altamente eficazes",
+    //                 author: "Stephen R. Covey",
+    //             },
+    //         ],
+    //     },
+    // ];
+
+    // const totalCartegories = booksByCategory.length
+
+    // console.log(totalCartegories);          
+    // for(let category of booksByCategory) {
+    //     console.log('Total de livros da categoria', category.category)
+    //     console.log(category.books.length)
+    // }
+
+    // function countAuthors() {
+    //     let authors = [];
+
+    //     for (let category of booksByCategory) {
+    //         for(let book of category.books) {
+    //             if(authors.indexOf(book.author) == -1) {
+    //             authors.push(book.author)
+    //         }
+    //         }
+    //     } 
+
+    //     console.log("Total de autores", authors.length)
+    // }
+
+    // countAuthors();
+
+    // function booksOfAuthor(author) {
+    //     let books = [];
+
+    //     for (let category of booksByCategory) {
+    //         for(let book of category.books) {
+    //         if(books.author === author) {
+    //             books.push(book.title)  
+    //         }
+    //         }
+    //     } 
+
+    //     console.log(`Livros do autor ${author}: ${books.join(", ")}`)
+        
+    // }
+    // booksOfAuthor('Augusto Cury')
+
+    
