@@ -76,6 +76,9 @@
 // calculateBalance()
 
 
+
+
+
 // Transformer fireheints for celsius
 
 // transformDegree ('50F')
@@ -115,6 +118,9 @@
 //     console.log(error.message)
     
 // }
+
+
+
 
 
 //Biblioteca
@@ -195,4 +201,3 @@
     // }
     // booksOfAuthor('Augusto Cury')
 
-    
