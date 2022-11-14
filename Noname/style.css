@@ -1,9 +1,30 @@
-body{
+body {
     font-size: 20px;
     font-variant: small-caps;
         
-    background-image:url(../Noname/media/back1.jpg);    
+    background-image: url(/media/backgroundmac.jpg);
     background-size: cover;
     background-position: center;
-   
+    background-repeat: no-repeat;
 }
+
+figure {
+    position: relative;
+  }
+   
+  figure:before,
+  figure:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position:absolute;
+  }
+   
+  img {
+    width: 20%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+  }
